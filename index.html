@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#061218">
+<meta name="description" content="Escape the Forbidden Fiscal Forest. A choice-driven forest escape with 12 Patronus forms, including two hidden rare reveals.">
+<title>Forbidden Fiscal Forest | Expanded Edition</title>
+<style>:root{color-scheme:dark;--ink:#eef4ec;--dim:#b7c9c4;--muted:#829b98;--gold:#dcc59a;--blue:#a9e9f3;--line:rgba(191,219,213,.20);--glass:rgba(7,20,25,.83);font-family:Arial,Helvetica,sans-serif;font-synthesis:none}
+*{box-sizing:border-box}html{background:#061218}body{margin:0;color:var(--ink);min-height:100svh;background:#061218}button{font:inherit;color:inherit}button:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:5px}button{touch-action:manipulation}button:disabled{cursor:not-allowed}button:not(:disabled){cursor:pointer}#world{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}.veil{position:fixed;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(3,12,17,.94),rgba(3,12,17,.64) 38%,rgba(3,12,17,.07) 72%),linear-gradient(0deg,rgba(3,12,17,.8),transparent 20%,transparent 80%,rgba(3,12,17,.52));z-index:1}.grain{position:fixed;inset:0;z-index:2;pointer-events:none;opacity:.035;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' opacity='.7' filter='url(%23n)'/%3E%3C/svg%3E")}
+.topbar{position:relative;z-index:4;min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 4.4vw;border-bottom:1px solid rgba(181,214,207,.1)}.brand{display:flex;align-items:center;gap:13px;letter-spacing:2.6px;text-transform:uppercase;font-size:10px;line-height:1.65;color:#d6ded5}.brand svg{width:27px;height:34px;color:var(--gold);flex-shrink:0}.brand strong{font-weight:400;color:var(--gold);display:block;font-size:9px;letter-spacing:3.7px}.settings{display:flex;gap:8px}.quiet{background:rgba(7,19,25,.38);border:1px solid var(--line);padding:10px 13px;font-size:10px;letter-spacing:1.2px;border-radius:3px;text-transform:uppercase;color:#c1d3d0;transition:background .2s}.quiet:hover{background:rgba(108,160,160,.14)}.quiet[aria-pressed=true]{border-color:rgba(170,222,224,.45);color:var(--blue)}
+#progress{position:relative;z-index:3;display:flex;gap:27px;margin:24px 4.4vw 0;align-items:center;min-height:18px;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:#6c8987}.step{display:flex;gap:9px;align-items:center}.step i{width:5px;height:5px;border:1px solid #65807c;transform:rotate(45deg);display:inline-block}.step.current{color:#ead9b6}.step.current i{background:var(--gold);border-color:var(--gold);box-shadow:0 0 12px #ddc59970}.step.done{color:#a2c5bf}.step.done i{background:#9fcac2;border-color:#9fcac2}
+#stage{position:relative;z-index:3;min-height:calc(100svh - 194px);display:flex;align-items:center;padding:38px 4.4vw 82px}.content{max-width:510px;width:100%;animation:arrive .5s both}.content.wide{max-width:570px}.eyebrow{font-size:10px;color:var(--gold);text-transform:uppercase;letter-spacing:3px;line-height:1.6;margin:0 0 15px;display:flex;gap:12px;align-items:center}.eyebrow:before{content:"";width:24px;height:1px;background:var(--gold);opacity:.65}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-1.1px;line-height:1.08;margin:0 0 20px;text-wrap:balance}h1:focus,h2:focus{outline:none}.hero-title{font-size:clamp(49px,5.5vw,83px);line-height:1.03;letter-spacing:-2px}.hero-title em{color:var(--gold);font-weight:400;font-style:italic;display:block}.scene-title{font-size:clamp(34px,3.55vw,51px)}.bodycopy{font-size:14px;line-height:1.85;color:#bdceca;max-width:480px;margin:0 0 22px}.bodycopy strong{font-weight:400;color:#eff3e8}.fineprint{font-size:11px;line-height:1.8;color:#8fa8a4;margin:15px 0 0;max-width:435px}.hero-note{font-family:Georgia,'Times New Roman',serif;font-style:italic;font-size:17px;color:#d2e2d9;margin:0 0 23px;line-height:1.65}.primary{border:1px solid #d6c093;background:#d8c49e;color:#102025;padding:16px 24px;min-height:50px;letter-spacing:1.5px;font-size:11px;text-transform:uppercase;border-radius:2px;display:inline-flex;align-items:center;justify-content:center;gap:18px;transition:background .2s,transform .2s}.primary:hover:not(:disabled){background:#efe0bd;transform:translateY(-1px)}.primary:disabled{opacity:.35}.primary .arrow{font-size:19px;line-height:.7}.choices{display:grid;gap:9px;margin-top:23px}.choice{width:100%;text-align:left;display:flex;align-items:center;gap:16px;min-height:72px;padding:15px 18px;border:1px solid rgba(185,211,203,.2);border-radius:3px;background:linear-gradient(110deg,rgba(15,33,38,.92),rgba(13,29,35,.70));transition:border .2s,background .2s,transform .2s}.choice:hover{border-color:rgba(222,202,162,.65);background:rgba(29,49,51,.93);transform:translateX(4px)}.choice-num{font-family:Georgia,serif;color:#b4a383;border-right:1px solid #56635b;padding-right:15px;font-size:16px;opacity:.82}.choice-main{font-size:13px;line-height:1.5;display:block;letter-spacing:.1px;color:#edf1e6}.choice-sub{display:block;font-size:11px;line-height:1.65;color:#8fabaa;margin-top:3px}.choice-tail{margin-left:auto;color:#a1b6ab;font-size:17px;flex-shrink:0}.control-note{font-size:9px;letter-spacing:1.1px;text-transform:uppercase;color:#78918e;margin:17px 0 0}.outcome-mark{font-size:26px;color:var(--blue);margin:0 0 18px}.memory-line{font-family:Georgia,serif;color:#c7dacf;font-size:17px;line-height:1.55;border-left:1px solid #9bc8c075;padding-left:18px;margin:25px 0}.run-content{margin:auto;text-align:center;max-width:640px;padding:70px 20px}.run-content .eyebrow{justify-content:center}.run-content .eyebrow:before{display:none}.run-content .bodycopy{margin:0 auto 22px}.run-title{font-size:clamp(32px,4.8vw,62px);font-family:Georgia,serif;font-style:italic;text-shadow:0 2px 24px #051119}.run-bar{height:2px;max-width:220px;background:#b6d4cb22;margin:26px auto}.run-bar span{display:block;height:100%;background:var(--gold);transform-origin:left;animation:dash var(--run-duration,3600ms) linear both}.run-content .quiet{margin-top:10px}.riddle{font-family:Georgia,serif;font-size:23px;line-height:1.6;color:#e7eadc;margin:22px 0;padding:20px 23px;border-left:1px solid #d5be92;background:#16303b55}.feedback{min-height:1.7em;font-size:12px;line-height:1.7;color:#c2dddb;margin:14px 0}.hint{background:none;border:0;border-bottom:1px solid #809e974d;color:#a2beba;padding:4px 0;font-size:11px;letter-spacing:.4px}.word-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:20px 0 17px}.word{border:1px solid #8cb6b642;background:rgba(10,31,40,.76);color:#c7dcda;border-radius:3px;padding:12px 6px;min-height:41px;font-family:Georgia,serif;font-size:15px;transition:background .2s,border .2s}.word:hover{border-color:#c6dddd99;background:#24424bcc}.word[aria-pressed=true]{border-color:#e2d3b0;background:#d9c79f;color:#14272c;box-shadow:0 0 20px #d4e9c51c}.word:disabled{opacity:.38}.word-status{font-size:11px;color:#a0bdbc;letter-spacing:1px;margin:10px 0 18px}.word-status.complete{color:var(--gold)}.reveal-panel{margin:auto;text-align:center;padding:220px 20px 0}.reveal-panel .eyebrow{justify-content:center}.reveal-panel .eyebrow:before{display:none}.reveal-panel h1{font-size:clamp(25px,4vw,49px);letter-spacing:4px;color:#e5fbff;text-shadow:0 0 28px #aadbeaaa}.result-title{font-size:clamp(56px,6.8vw,95px);line-height:1.05;color:#e8fbf6;letter-spacing:-2px;margin-bottom:8px}.result-subtitle{font-family:Georgia,serif;font-style:italic;color:var(--gold);font-size:22px;line-height:1.5;margin:0 0 22px}.word-tags{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0}.word-tags span{color:#c7e0de;border:1px solid #a7d1ce42;font-size:10px;padding:8px 11px;letter-spacing:1.2px;text-transform:uppercase}.result-details{border-top:1px solid #7eaaa336;margin-top:23px;padding-top:15px;max-width:480px}.result-details summary{cursor:pointer;font-size:11px;color:#aac7c3;letter-spacing:.3px;line-height:1.7}.result-details p{font-size:11px;color:#98b4af;line-height:1.8;margin:12px 0 0}.result-details .recalled{font-family:Georgia,serif;font-size:14px;color:#c1d4cc}.result-controls{display:flex;gap:12px;flex-wrap:wrap;margin-top:23px}.result-controls .quiet{min-height:44px}.result-controls .primary{padding:13px 19px;min-height:44px}.footer{position:relative;z-index:3;display:flex;justify-content:space-between;gap:20px;margin:0 4.4vw;padding:17px 0 22px;border-top:1px solid #819b991f;font-size:9px;line-height:1.8;color:#6b8987;letter-spacing:.6px}.footer .right{text-align:right}.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}.visual-caption{position:fixed;right:5.5vw;bottom:11vh;z-index:2;text-align:right;color:#a3c5c099;font-size:9px;letter-spacing:3px;text-transform:uppercase;pointer-events:none}.visual-caption:before{content:"";display:block;width:34px;height:1px;background:#b5cec15c;margin:0 0 12px auto}.noscript{padding:40px;position:relative;z-index:7;background:#14252c}.flash-message{font-size:11px;color:var(--gold);min-height:18px;margin-top:10px}.bodycopy small{font-size:12px;color:#91adaa}
+@keyframes arrive{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}@keyframes dash{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@media(min-width:1600px){#stage{padding-top:65px;padding-bottom:115px}.content{max-width:580px}.bodycopy{font-size:16px;max-width:530px}.choice{padding:18px 20px}.choice-main{font-size:14px}.choice-sub{font-size:12px}.word{padding:16px 8px}}
+@media(max-width:800px){.topbar{padding:18px 22px;min-height:81px;gap:10px}.brand{font-size:8px;letter-spacing:1.8px;gap:9px}.brand strong{font-size:8px;letter-spacing:2.5px}.settings{gap:5px}.quiet{padding:9px 10px;font-size:9px;letter-spacing:.5px}#progress{margin:22px 23px 0;gap:19px;font-size:8px;letter-spacing:1px}.step{gap:7px}#stage{padding:34px 24px 52px;min-height:calc(100svh - 191px)}.content{max-width:520px}.veil{background:linear-gradient(90deg,#041017dd,#0410179c 50%,#04101738),linear-gradient(0deg,#041017eb,transparent 90%)}.footer{margin:0 24px}.visual-caption{display:none}.hero-title{font-size:60px}.bodycopy{font-size:14px}.run-content{padding:90px 0}.reveal-panel{padding-top:240px}}
+@media(max-width:520px){.topbar{padding:16px 18px;align-items:center;min-height:76px}.brand svg{width:19px;height:26px}.brand{font-size:7px;letter-spacing:1.25px;gap:7px}.brand strong{font-size:7px;letter-spacing:2px}.settings{gap:5px}.quiet{font-size:8px;padding:9px 7px}.settings .motion-label{display:inline}#progress{margin:19px 20px 0;gap:16px;font-size:7px;letter-spacing:.7px}.step{gap:5px}#stage{padding:28px 20px 44px;min-height:calc(100svh - 181px);align-items:center}.hero-title{font-size:clamp(45px,13vw,61px);letter-spacing:-1.8px}.hero-note{font-size:16px}.eyebrow{font-size:9px;letter-spacing:2.4px;margin-bottom:13px}.scene-title{font-size:35px}.bodycopy{font-size:13px;line-height:1.8;margin-bottom:19px}.choice{padding:13px 13px;gap:12px;min-height:73px}.choice-num{padding-right:12px;font-size:15px}.choice-main{font-size:12px}.choice-sub{font-size:10px}.choices{margin-top:18px;gap:9px}.word-grid{gap:7px;margin-top:17px}.word{font-size:14px;padding:11px 5px;min-height:41px}.fineprint{font-size:10px}.footer{margin:0 20px;font-size:8px;letter-spacing:.2px;gap:15px;padding-top:15px}.control-note{font-size:8px}.content.result{padding-top:155px}.result-title{font-size:65px}.result-subtitle{font-size:20px;margin-bottom:16px}.content.result .bodycopy{max-width:390px}.result-details{margin-top:19px}.word-tags{margin:19px 0}.riddle{font-size:21px;padding:16px 19px}.run-content{padding:85px 0}.reveal-panel{padding-top:210px}.reveal-panel h1{font-size:28px;letter-spacing:2px}.veil{background:linear-gradient(90deg,#041017a8,#04101749),linear-gradient(0deg,#041017f5 1%,#041017bc 59%,#04101710)}body[data-scene=result] .veil{background:linear-gradient(0deg,#041017f5 1%,#041017bd 53%,#04101705 91%)}.primary{font-size:10px}}
+@media(prefers-reduced-motion:reduce){.content{animation:none}.choice,.primary{transition:none}.choice:hover,.primary:hover:not(:disabled){transform:none}}
+body.still .content{animation:none}body.still .choice,body.still .primary{transition:none}body.still .choice:hover,body.still .primary:hover:not(:disabled){transform:none}
+
+.rare-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;margin:0 0 17px;border:1px solid #dcca9388;background:#bbba7710;border-radius:3px;color:#f1e6c4;font-size:9px;letter-spacing:1.35px;line-height:1.5;text-transform:uppercase;box-shadow:0 0 24px #f0e3af0c}.rare-badge span{font-size:16px}.content.result .eyebrow{line-height:1.7}
+@media(max-width:520px){.rare-badge{font-size:8px;letter-spacing:1px;padding:7px 9px}.result-title{font-size:clamp(49px,14vw,65px)}body[data-scene=result] #stage{align-items:flex-start}.content.result{padding-top:165px}}
+</style>
+</head>
+<body data-scene="start">
+<canvas id="world" aria-hidden="true"></canvas><div class="veil"></div><div class="grain"></div>
+<header class="topbar"><div class="brand"><svg viewBox="0 0 30 36" aria-hidden="true"><path d="M15 1 28 9v15L15 35 2 24V9Z" fill="none" stroke="currentColor" stroke-width=".8"/><path d="m15 7-6 10h4l-6 9h16l-6-9h4Z" fill="none" stroke="currentColor" stroke-width=".8"/><path d="M15 26v5" stroke="currentColor" stroke-width=".8"/></svg><span><strong>A moonlit misadventure</strong>Forbidden Fiscal Forest</span></div><div class="settings"><button class="quiet" id="soundToggle" aria-pressed="false" aria-label="Turn atmospheric sound on">Sound off</button><button class="quiet" id="motionToggle" aria-pressed="true" aria-label="Turn animation off"><span class="motion-label">Motion </span>on</button></div></header>
+<nav id="progress" aria-label="Adventure progress"></nav>
+<main id="stage"></main>
+<div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
+<div class="visual-caption" id="visualCaption">The forest remembers.</div>
+<footer class="footer"><span>A tiny, unofficial fan-made adventure.<br>No accounts. No tracking. Just a little magic.</span><span class="right" id="footerNote">Expanded edition · 12 Patronuses.<br>Your story stays in this browser tab.</span></footer>
+<noscript><div class="noscript">This game needs JavaScript. Enable JavaScript, then reopen this file in your browser.</div></noscript>
+<script>/* Procedural scenery and hand-drawn spirit creatures, rendered locally in Canvas. */
+'use strict';
+window.ForestArt=(()=>{
+ const canvas=document.querySelector('#world'),c=canvas.getContext('2d');
+ if(!c)return {setScene(){},setMotion(){}};
+ let W=innerWidth,H=innerHeight,ratio=1,scene='start',animal=null,still=false,last=0,start=0,clock=0;
+ const PI=Math.PI,TAU=PI*2;
+ function rng(seed){return ()=>{seed=(seed*1664525+1013904223)>>>0;return seed/4294967296;};}const r=rng(7143);
+ const stars=Array.from({length:85},()=>({x:r(),y:r()*.62,s:r()*1.4+.35,p:r()*TAU}));
+ const trees=Array.from({length:78},(_,i)=>({x:r(),z:.06+r()*.94,h:.72+r()*.5,b:r()*TAU,seed:i*973+24}));
+ const motes=Array.from({length:45},()=>({x:r(),y:r(),s:r()*1.5+.4,p:r()*TAU,speed:.3+r()*.8}));
+ function ell(x,y,rx,ry,fill,rotation=0){c.beginPath();c.ellipse(x,y,Math.max(.01,rx),Math.max(.01,ry),rotation,0,TAU);c.fillStyle=fill;c.fill();}
+ function line(points,color,width=1){c.beginPath();points.forEach(([x,y],i)=>i?c.lineTo(x,y):c.moveTo(x,y));c.strokeStyle=color;c.lineWidth=width;c.stroke();}
+ function glow(x,y,radius,color,opacity=1){c.save();c.globalAlpha=opacity;const g=c.createRadialGradient(x,y,0,x,y,Math.max(1,radius));g.addColorStop(0,color);g.addColorStop(1,'rgba(120,215,224,0)');c.fillStyle=g;c.fillRect(x-radius,y-radius,radius*2,radius*2);c.restore();}
+ function star(x,y,size,alpha){c.save();c.globalAlpha=alpha;c.fillStyle='#ddf9f1';c.fillRect(x-size/2,y-size/2,size,size);c.restore();}
+ function tree(x,ground,height,width,seed,color){const q=rng(seed);c.save();c.fillStyle=color;c.strokeStyle=color;c.lineCap='round';c.lineJoin='round';const bend=(q()-.5)*height*.16;
+  c.beginPath();c.moveTo(x-width*.75,ground);c.bezierCurveTo(x-width*.24,ground-height*.38,x+bend-width*.26,ground-height*.72,x+bend,ground-height);c.bezierCurveTo(x+bend+width*.36,ground-height*.67,x+width*.22,ground-height*.3,x+width*.76,ground);c.closePath();c.fill();
+  for(let j=0;j<6;j++){const by=ground-height*(.33+j*.10),side=j%2?1:-1,span=height*(.15+q()*.13),trunkX=x+bend*((ground-by)/height);c.lineWidth=width*(.32-j*.033);c.beginPath();c.moveTo(trunkX,by+height*.07);c.quadraticCurveTo(trunkX+side*span*.43,by-height*.04,trunkX+side*span,by-height*(.10+q()*.08));c.stroke();c.lineWidth=Math.max(.7,c.lineWidth*.47);c.beginPath();c.moveTo(trunkX+side*span*.60,by-height*.045);c.lineTo(trunkX+side*span*.68,by-height*.20);c.lineTo(trunkX+side*span*.83,by-height*.25);c.stroke();}
+  c.lineWidth=width*.22;for(let j=0;j<3;j++){const side=j%2?1:-1;c.beginPath();c.moveTo(x,ground-height*.04);c.quadraticCurveTo(x+side*width*(1.3+j),ground+width*.5,x+side*width*(2.7+j),ground+width*.65);c.stroke();}c.restore();
+ }
+ function sky(t,lake=false){const g=c.createLinearGradient(0,0,0,H);g.addColorStop(0,lake?'#081823':'#07141e');g.addColorStop(.44,lake?'#173949':'#173036');g.addColorStop(.73,'#0b2028');g.addColorStop(1,'#030e15');c.fillStyle=g;c.fillRect(0,0,W,H);const mx=W*(W<550?.73:.76),my=H*.19;glow(mx,my,Math.min(W,H)*.37,'rgba(112,186,197,.12)');
+  for(const s of stars){star(s.x*W,s.y*H,s.s,.18+.30*(.5+.5*Math.sin(t*.4+s.p)));}
+  glow(mx,my,76,'rgba(175,215,209,.10)');ell(mx,my,18,18,'#c2d2bd');ell(mx-6,my-4,18,18,'#19313a');
+ }
+ function forest(t,running=false){sky(t);const horizon=H*.44,vx=W*(W<550?.57:.66);
+  glow(vx,horizon,Math.min(W*.32,H*.40),'rgba(94,153,156,.19)');
+  // A pale winding trail under the canopy.
+  c.beginPath();c.moveTo(vx-7,horizon);c.bezierCurveTo(vx-35,H*.61,W*.67,H*.76,W*.40,H);c.lineTo(W*.90,H);c.bezierCurveTo(W*.63,H*.75,vx+60,H*.58,vx+8,horizon);c.closePath();const pathG=c.createLinearGradient(0,horizon,0,H);pathG.addColorStop(0,'#698a8230');pathG.addColorStop(1,'#677c651a');c.fillStyle=pathG;c.fill();
+  const sorted=trees.map(tr=>{let z=tr.z;if(running)z=.035+((z+t*.20)%1)*.965;return{...tr,depth:z};}).sort((a,b)=>a.depth-b.depth);
+  for(const tr of sorted){const d=tr.depth;const side=tr.x<.5?-1:1;const distance=.13+Math.abs(tr.x-.5)*1.8;let x=vx+side*distance*W*d*.86;const ground=horizon+Math.pow(d,1.3)*H*.62;const ht=H*(.27+.82*d)*tr.h;const width=(4+d*35)*(.7+tr.x*.6);const color=d<.28?'#23454b':d<.52?'#18363d':d<.76?'#0c252c':'#06191f';tree(x,ground,ht,width,tr.seed,color);}
+  // Thin rays, not hard-edged spotlights.
+  c.save();c.globalCompositeOperation='screen';for(let i=0;i<4;i++){const x=W*(.66+i*.08);c.beginPath();c.moveTo(x,H*.03);c.lineTo(x-W*.13,H*.80);c.lineTo(x-W*.10,H*.80);c.lineTo(x+W*.007,H*.03);c.closePath();c.fillStyle='rgba(125,174,166,.024)';c.fill();}c.restore();
+  mist(t);fireflies(t,running);
+  if(scene==='fork'||scene==='fork_outcome'){
+   const x=W*(W<550?.75:.79),y=H*.59;glow(x,y,55,'rgba(247,213,133,.23)');ell(x,y,4,8,'#e4c887');line([[x-8,y-9],[x-8,y+11],[x+8,y+11],[x+8,y-9],[x-8,y-9]],'#adb799',1);line([[x-5,y-9],[x-5,y-16],[x+5,y-16],[x+5,y-9]],'#adb799',1);
+   glow(W*.83,H*.45,6,'rgba(172,222,191,.85)');glow(W*.842,H*.45,6,'rgba(172,222,191,.85)');
+  }
+  if(scene==='ward'||scene==='ward_outcome'||scene==='riddle')ward(t);
+  // Silhouetted foreground roots frame the screen without obscuring the choices.
+  tree(W*.99,H*1.05,H*1.15,65,727,'#031119');tree(W*-.015,H*1.05,H*1.05,70,337,'#031119');
+ }
+ function mist(t,lake=false){c.save();for(let i=0;i<5;i++){const y=H*(.47+i*.077)+(Math.sin(t*.13+i)*6);const g=c.createRadialGradient(W*(.55+Math.sin(t*.045+i)*.20),y,1,W*.6,y,W*.58);g.addColorStop(0,lake?'rgba(139,186,199,.047)':'rgba(126,166,160,.045)');g.addColorStop(1,'rgba(90,151,159,0)');c.save();c.translate(0,y);c.scale(1,.15);c.fillStyle=g;c.fillRect(0,-H,W,H*2);c.restore();}c.restore();
+  const g=c.createLinearGradient(0,H*.43,0,H*.79);g.addColorStop(0,'rgba(115,164,166,0)');g.addColorStop(.45,'rgba(108,165,163,.053)');g.addColorStop(1,'rgba(81,130,141,0)');c.fillStyle=g;c.fillRect(0,H*.43,W,H*.38);
+ }
+ function fireflies(t,running=false){c.save();for(let i=0;i<motes.length;i++){const m=motes[i];let x=m.x*W+Math.sin(t*.30+m.p)*13,y=H*.33+m.y*H*.62+Math.cos(t*.18+m.p)*8;if(running){const z=(m.y+t*.37)%1;x=W*.66+(m.x-.5)*W*z*2;y=H*.43+z*z*H*.67;}const alpha=.08+.38*(.5+.5*Math.sin(t*m.speed+m.p));if(i%5===0)glow(x,y,8,'rgba(166,215,178,.24)',alpha);ell(x,y,m.s,m.s,`rgba(193,221,191,${alpha})`);if(running)line([[x,y],[x+(x-W*.66)*.034,y+(y-H*.43)*.034]],`rgba(178,215,207,${alpha*.3})`,.8);}c.restore();}
+ function spider(x,y,size,t,phase=0){c.save();c.translate(x,y);c.scale(size,size);c.lineCap='round';c.lineJoin='round';for(let side of [-1,1]){for(let j=0;j<4;j++){const twitch=Math.sin(t*1.6+j*1.2+phase)*3;c.beginPath();c.moveTo(side*13,(j-1)*8);c.lineTo(side*(39+j*6),-36+j*23+twitch);c.lineTo(side*(59+j*4),-26+j*28+twitch);c.lineTo(side*(68+j*4),-10+j*27);c.strokeStyle='#29454f';c.lineWidth=4.8;c.stroke();c.strokeStyle='#0a1922';c.lineWidth=3;c.stroke();}}
+  ell(0,-15,25,31,'#0b1720',-.12);ell(0,10,20,18,'#182b34');ell(-6,11,3,3,'#90bdc3');ell(6,11,3,3,'#90bdc3');ell(-12,7,1.4,1.4,'#698f9f');ell(12,7,1.4,1.4,'#698f9f');
+  const rr=rng(105);for(let j=0;j<43;j++){const a=rr()*TAU,rad=20+rr()*3;line([[Math.cos(a)*rad,Math.sin(a)*rad-14],[Math.cos(a)*(rad+5),Math.sin(a)*(rad+5)-14]],'#29434b',.65);}c.restore();
+ }
+ function cave(t){const g=c.createRadialGradient(W*.76,H*.44,20,W*.72,H*.45,Math.max(W,H)*.82);g.addColorStop(0,'#242344');g.addColorStop(.36,'#102537');g.addColorStop(.75,'#09141f');g.addColorStop(1,'#050e14');c.fillStyle=g;c.fillRect(0,0,W,H);glow(W*.72,H*.45,W*.32,'rgba(116,60,166,.13)');
+  // Cavern ribs and a webbed entrance.
+  for(let j=4;j>=0;j--){c.beginPath();c.ellipse(W*.73,H*.54,W*(.27+j*.022),H*(.34+j*.03),0,PI,TAU);c.lineWidth=13+j*4;c.strokeStyle=j%2?'#122434':'#0b1c28';c.stroke();}
+  const webX=W*.98,webY=H*.14;for(let i=0;i<8;i++){let a=PI*.52+i*.16;line([[webX,webY],[webX+Math.cos(a)*W*.36,webY+Math.sin(a)*W*.36]],'rgba(145,184,197,.14)',.75);}for(let j=1;j<=6;j++){c.beginPath();for(let i=0;i<8;i++){const a=PI*.52+i*.16,rr=W*.055*j;const x=webX+Math.cos(a)*rr,y=webY+Math.sin(a)*rr;i?c.lineTo(x,y):c.moveTo(x,y);}c.strokeStyle='rgba(168,194,205,.1)';c.lineWidth=.7;c.stroke();}
+  // Distant workstations, including the empty one they want you to use.
+  const baseY=H*.53;for(let i=0;i<3;i++){const x=W*(.55+i*.145),s=Math.min(W/1200,1.4);c.save();c.translate(x,baseY+(i%2)*22);c.scale(s,s);glow(0,-40,90,i%2?'rgba(128,95,192,.16)':'rgba(88,195,220,.16)');c.fillStyle='#06151f';c.fillRect(-55,-85,110,67);c.strokeStyle=i%2?'#6a5c9980':'#568ca480';c.lineWidth=1.5;c.strokeRect(-55,-85,110,67);c.fillStyle='#112b3f';c.fillRect(-49,-79,98,55);for(let j=0;j<6;j++){c.fillStyle=j%2?'#80b7b34d':'#92a6dc66';c.fillRect(-41,-70+j*7,30+(j*31%47),1.5);}c.fillStyle='#28414c';c.fillRect(-3,-18,6,21);c.fillRect(-20,2,40,3);c.fillStyle='#132731';c.fillRect(-80,18,160,9);c.fillRect(-70,25,6,80);c.fillRect(64,25,6,80);c.save();c.transform(1,0,-.30,.5,0,0);c.fillStyle='#38576b';c.fillRect(-35,17,74,29);for(let k=0;k<9;k++){for(let j=0;j<3;j++){c.fillStyle=j%2?'#8eadc260':'#a584c255';c.fillRect(-31+k*7,20+j*7,4,3);}}c.restore();if(i!==0)spider(0,40,.45,t,i);c.restore();}
+  // Neon-tinted floor reflections and a suspended, eight-legged gatekeeper.
+  for(let j=0;j<6;j++){const y=H*.65+j*H*.052;line([[W*.52-j*20,y],[W*.98,y]],j%2?'#53427912':'#5198b115',1);}
+  const sx=W*(W<600?.78:.77),sy=H*(W<600?.41:.66),ss=Math.min(W/1000,H/710)*1.3;line([[sx,0],[sx,sy-ss*40]],'#adccd336',.7);glow(sx,sy,160,'rgba(103,158,187,.075)');spider(sx,sy,ss,t,1);
+  mist(t);fireflies(t);
+ }
+ function ward(t){const x=W*(W<550?.75:.77),y=H*.76,s=Math.min(W/1000,H/750);c.save();c.translate(x,y);c.scale(s,s);c.lineCap='round';c.beginPath();c.moveTo(-140,12);c.bezierCurveTo(-190,-120,-140,-286,0,-300);c.bezierCurveTo(135,-305,175,-138,140,12);c.strokeStyle='#0a181c';c.lineWidth=24;c.stroke();c.lineWidth=2;c.strokeStyle='#446b6577';c.stroke();for(let j=0;j<10;j++){const a=PI+PI*j/9;let rx=Math.cos(a)*143,ry=-10+Math.sin(a)*285;line([[rx-7,ry-7],[rx+2,ry+5],[rx+7,ry-8]],'#a9d1bd55',1);}
+  const floatY=Math.sin(t)*4;const ghost=c.createLinearGradient(0,-225,0,0);ghost.addColorStop(0,'rgba(3,9,17,.93)');ghost.addColorStop(1,'rgba(1,8,15,.03)');c.fillStyle=ghost;c.beginPath();c.moveTo(-73,0);c.quadraticCurveTo(-59,-86+floatY,-29,-180+floatY);c.bezierCurveTo(-24,-229+floatY,34,-225+floatY,35,-180+floatY);c.quadraticCurveTo(60,-63+floatY,81,0);c.lineTo(39,-14);c.lineTo(10,9);c.lineTo(-18,-11);c.closePath();c.fill();line([[-11,-182+floatY],[13,-182+floatY]],'#8bb5b22f',1);
+  for(let j=0;j<4;j++){c.save();c.translate(34+j*3,-112+j*4+floatY);c.rotate(-.17+j*.1);c.fillStyle='#6c807b4f';c.fillRect(-17,-10,34,37);c.fillStyle='#142c33';for(let k=0;k<4;k++)c.fillRect(-11,-4+k*6,18,1);c.restore();}glow(145,-44,28,'rgba(212,215,141,.33)');ell(145,-44,3,6,'#d5d9a8');c.restore();}
+ function lake(t){sky(t,true);const hy=H*.47;const water=c.createLinearGradient(0,hy,0,H);water.addColorStop(0,'#183440');water.addColorStop(.25,'#142e3b');water.addColorStop(1,'#051420');c.fillStyle=water;c.fillRect(0,hy,W,H-hy);
+  // The far shore is made of tiny forest silhouettes.
+  for(let i=0;i<28;i++){const x=(i/27)*W,ht=35+Math.sin(i*5)*12+Math.cos(i)*18;tree(x,hy+6,ht,3,i*23+17,'#0c212b');}
+  const reflectionX=W*.76;for(let i=0;i<63;i++){const p=i/63,y=hy+9+Math.pow(p,1.35)*(H-hy)*.88,width=(16+p*105)*(0.6+Math.sin(i*8.7+t*.6)*.32),x=reflectionX+Math.sin(i*2.71+t*.25)*(8+p*29);line([[x-width,y],[x+width,y]],`rgba(137,188,192,${.025+(1-p)*.065})`,1);}
+  // Shore curves toward the opening that the spirit will illuminate.
+  c.beginPath();c.moveTo(0,H*.69);c.bezierCurveTo(W*.23,H*.67,W*.31,H*.91,W*.72,H);c.lineTo(0,H);c.closePath();c.fillStyle='#06181f';c.fill();
+  c.beginPath();c.moveTo(W,H*.68);c.bezierCurveTo(W*.90,H*.66,W*.91,H*.89,W*.73,H);c.lineTo(W,H);c.closePath();c.fillStyle='#071a20';c.fill();
+  for(let j=0;j<25;j++){const q=rng(j*939+43),side=j%2?-1:1,x=side<0?q()*W*.30:W*(.90+q()*.1),y=H*(.72+q()*.30);const ht=18+q()*55;line([[x,y],[x+(q()-.5)*20,y-ht]],'#173637',1);}
+  tree(W*.99,H*.86,H*.83,39,716,'#071923');tree(W*.035,H*.79,H*.88,44,317,'#04151c');mist(t,true);fireflies(t);
+  if(scene==='reveal'||scene==='result'){
+   const elapsed=still?6:Math.max(0,(performance.now()-start)/1000);const p=scene==='result'?1:Math.min(1,elapsed/2.8);const mobile=W<550;const cx=mobile?W*.57:W*.76,cy=mobile?(scene==='result'?219:H*.42):H*.53;const scale=mobile?Math.min(W/620,H/1050)*.90:Math.min(W/1300,H/820)*.94;
+   const rr=180*scale;glow(cx,cy,rr*1.8,'rgba(119,216,233,.14)',p);glow(cx,cy,rr*.95,'rgba(165,236,244,.17)',p);
+   c.save();c.globalAlpha=p;for(let j=0;j<3;j++){c.beginPath();c.ellipse(cx,cy+129*scale+j*7*scale,146*scale+j*25*scale,13*scale+j*2*scale,0,0,TAU);c.strokeStyle=`rgba(161,232,239,${.21-j*.055})`;c.lineWidth=1;c.stroke();}c.restore();
+   drawAnimal(animal||'stag',cx,cy,scale,t,p);
+   // A trail of light curves all the way out of the trees.
+   if(p>.4){c.save();c.globalAlpha=(p-.4)/.6*.5;for(let j=0;j<38;j++){const f=j/38,x=cx+Math.sin(f*3.9)*W*.035+(W*.96-cx)*f*.85,y=cy+133*scale+f*(H-cy);ell(x,y,1+f*1.2,.7+f*.7,'#bcf2ed');}c.restore();}
+  }
+ }
+ function drawAnimal(id,x,y,s,t,p){if(p<=0)return;
+ c.save();
+ const rare=id==='phoenix'||id==='unicorn';
+ const sway=Math.sin(t*.42+id.length)*.008*(rare?1.25:.75);
+ const floatY=Math.sin(t*(rare ? .78 : .62)+id.length)*4+(rare?Math.cos(t*.35)*1.5:0);
+ const breathe=1+Math.sin(t*(rare ? .95 : .7)+id.length)*.018+(rare ? .012 : .006);
+ c.translate(x,y+floatY);
+ c.scale(s*breathe,s*(1-Math.sin(t*.55+id.length)*.01));
+ c.rotate(sway);
+ c.globalAlpha=p;
+ c.lineJoin='round';
+ c.lineCap='round';
+ let shapes=[];let details=[];
+ const P=d=>new Path2D(d);
+ if(id==='stag'||id==='doe'){
+  shapes=['M-108 8 C-104-12-60-20-14-14 L15-12 C24-34 29-61 31-80 L51-92 74-92 86-79 62-71 53-58 42 9 33 27 44 102 34 112 28 108 19 42 8 28 -4 32 -10 95 -20 110 -29 110 -18 87 -18 30 -66 24 -84 92 -76 106 -87 111 -96 101 -90 79 -80 27 -102 24 -119 83 -111 102 -122 105 -130 89 -117 21 Z','M-105 1 Q-130-13-138-4 Q-129 12-109 17','M40-82 31-110 45-95','M60-88 73-107 65-85'];
+  details=['M41-95 Q25-117 34-157 M34-117 12-130 5-148 M32-132 15-151 17-172 M34-145 49-163 48-179 M54-96 Q62-123 56-154 M60-117 79-127 87-145 M60-135 76-154 75-171 M56-144 46-158','M-88 12 Q-27 0 17 9 M28-9 Q39-42 42-65'];
+  if(id==='doe')details=details.slice(1);
+ } else if(id==='wolf'){
+  shapes=['M-124-5 Q-143-42-127-61 Q-113-36-96-21 C-65-31-13-19 18-21 L45-60 47-95 65-76 81-94 83-60 111-43 126-35 107-24 82-19 64 19 56 42 67 89 57 111 46 111 51 91 39 50 34 31 22 29 7 91 11 108-2 110-9 93 1 61 5 30-55 23-78 79-67 103-76 111-88 101-91 77-76 32-88 26-113 74-109 94-121 98-130 79-116 45-105 14 Z'];
+  details=['M68-45 78-46 M84-27 102-29 M42-12 Q22 4 8 4 M-76 9 Q-36-3-6 10 M49 18 34 30'];
+ } else if(id==='fox'){
+  shapes=['M-44 18 C-82 27-132 23-149-18 C-167-52-149-82-130-100 C-134-55-83-67-73-20 L-50-8 Z','M-78 11 Q-71-12-39-9 L22-8 45-29 51-64 68-40 82-55 88-27 119-6 142 2 122 13 94 17 72 38 59 82 66 94 52 103 45 93 49 51 35 40 15 87 19 102 6 104 0 88 10 49-30 38-53 73-40 92-45 102-61 98-66 78-51 46-66 39-89 62-105 88-118 87-116 76-96 48-86 22 Z'];
+  details=['M83-17 91-16 M-146-56 Q-121-48-112-26 M64 28 Q87 3 116 5 M18 10 Q-20 2-49 20'];
+ } else if(id==='owl'){
+  shapes=['M-43 1 C-76-52-137-86-173-61 C-169-27-128 30-63 50 L-27 58 Z','M43 1 C76-52 137-86 173-61 C169-27 128 30 63 50 L27 58 Z','M-45-49 -52-91 -24-78 Q0-88 25-77 L53-92 46-48 C65-8 58 54 23 75 L20 102 3 93-10 105-24 79 C-53 49-65-11-45-49 Z'];
+  details=['M-22-52 Q-40-53-37-29 Q-34-11-17-20 Q-4-30-14-48 M22-52 Q40-53 37-29 Q34-11 17-20 Q4-30 14-48 M-6-27 0-14 6-27 M-136-50 Q-93-19-58 13 M136-50 Q93-19 58 13 M-150-28 Q-101 2-63 30 M150-28 Q101 2 63 30 M-26 6-15 16-5 5 M8 7 19 17 29 5 M-18 28-7 38 3 28 M9 42 18 50 27 39'];
+ } else if(id==='otter'){
+  shapes=['M-48 59 C-87 93-146 114-167 97 Q-172 89-158 89 C-106 88-90 58-70 23 Z','M-60 59 C-85 28-67-10-43-37 Q-31-52-33-73 C-57-100-40-127-16-128 C13-140 45-121 44-99 Q60-85 44-73 Q29-59 25-44 C34-20 57 0 71 17 Q82 26 73 34 Q63 42 48 22 L26 3 C41 35 22 68-2 78 Q-24 94-46 83 L-29 67-5 56-25 35-39 69-60 80-72 73 Z'];
+  details=['M-24-126 Q-35-146-46-129 M-17-102-11-104 M18-105 23-104 M27-87 46-87 M25-91 46-96 M22-82 46-77 M-10-57 Q-26-36-8-13 Q8 8-3 36 M-40-20-67-2-57 9-33 1'];
+ } else if(id==='raven'){
+  shapes=['M-17-13 C-60-63-121-141-179-124 Q-159-94-112-57 L-148-74 Q-127-37-70-13 L-110-25 Q-83 11-34 21 Z','M16-15 C58-76 126-132 180-117 Q159-89 105-53 L149-65 Q127-28 65-8 L108-17 Q74 16 28 22 Z','M-20-23 Q-36-43-26-61 Q-17-80 5-76 Q26-74 30-55 L58-42 30-34 Q26-8 18 29 L36 83 12 71 0 100-14 75-32 86-20 35 Q-40 11-20-23 Z'];
+  details=['M-13-58-6-60 M4-48 27-47 M-34-6 Q-101-56-153-111 M32-6 Q100-56 153-106 M-8 30-13 64 M6 30 13 67'];
+ } else if(id==='lynx'){
+  shapes=['M-107 8 Q-137 17-129 40 Q-124 47-116 36 L-96 28 Z','M-99 4 C-90-31-40-32 6-16 L23-28 24-69 31-82 46-61 65-64 84-89 88-46 Q104-33 106-11 L118 3 104 15 81 16 65 35 57 80 69 95 59 108 44 104 43 88 41 44 29 39 17 93 23 106 7 110-2 99 2 79 8 38-52 32-66 74-51 99-59 111-74 102-83 77-74 45-85 34-96 70-91 97-106 107-116 92-113 61-100 30 Z'];
+  details=['M29-74 27-101 M85-81 95-106 M63-25 71-27 M99-1 108 0 M-83-9-73 0 M-58-14-51-4 M-29-12-20-2 M-64 14-53 22 M-35 13-27 20 M46 10 56 16 M83 3 103 11 M85-4 105-9'];
+ } else if(id==='badger'){
+  shapes=['M-112 24 Q-147 12-150 33 Q-142 42-119 41 Z','M-121 30 C-121-2-92-25-47-26 Q1-28 31-8 L53-13 61-30 75-30 84-16 Q109-10 126 7 L145 19 Q153 26 138 32 L112 34 87 49 62 52 49 70 56 83 37 88 28 80 29 59 7 54-5 73 0 86-19 90-26 80-18 57-62 53-79 72-71 86-88 91-101 82-98 61-113 54 Z'];
+  details=['M65-15 Q75 8 127 27 M46-6 Q63 15 106 40 M56-7 Q61 18 84 32 M101 10 106 12 M-104 22 Q-68-5-29 5 M-105 33 Q-65 9-20 16 M36 70 49 71'];
+ } else if(id==='phoenix'){
+  shapes=['M-15 1 C-53-20-75-82-87-146 Q-108-131-100-92 L-123-129 Q-139-99-114-62 L-149-92 Q-153-59-116-26 L-151-48 Q-140-6-90 8 L-120 7 Q-88 35-25 30 Z','M16 1 C51-19 75-83 87-146 Q109-130 100-91 L124-128 Q140-98 115-62 L150-92 Q154-58 117-27 L152-48 Q141-6 91 8 L121 7 Q88 35 25 30 Z','M-19-13 Q-30-41-18-60 Q-6-79 9-69 L16-89 22-69 Q38-66 38-53 L57-42 35-38 Q21-19 24 5 Q36 28 9 48 L-9 48 Q-37 25-19-13 Z','M-10 36 C-50 67-66 99-56 144 Q-48 129-39 117 C-28 155-5 183 10 188 Q-5 160-7 142 Q29 160 46 149 Q26 133 27 103 C39 82 34 56 12 38 Z'];
+  details=['M-25 8 Q-71-49-85-111 M-44 12 Q-92-22-121-63 M26 8 Q72-49 85-111 M44 12 Q93-22 121-62 M7-52 13-53 M-2 48 Q-34 85-30 123 M8 50 Q16 98 24 130 M-4 86 Q-13 143 4 169'];
+ } else if(id==='unicorn'){
+  shapes=['M-95-11 C-128-48-151-20-149 38 Q-143 82-164 105 Q-127 93-128 49 Q-121 19-102 18 Z','M-106 6 C-100-28-43-33 1-23 Q17-55 24-88 L43-102 63-100 77-89 83-67 111-43 Q111-26 94-30 L69-42 55-31 43 14 40 33 49 104 35 116 24 111 22 48 11 30-1 29-9 97-18 114-30 111-28 98-18 29-59 28-74 88-64 106-73 116-86 110-89 93-80 29-97 25-115 85-109 109-122 113-134 98-121 48 Z','M66-88 77-150 80-77 Z','M39-97 38-123 51-101 Z'];
+  details=['M30-89 Q-1-72 10-34 M24-85 Q-8-77-11-38 M24-65 Q-8-52-5-27 M70-65 77-63 M74-123 78-122 M72-109 79-107 M-94 9 Q-54-6-9 5 M42 8 Q45-22 52-44'];
+ } else if(id==='hare'){
+  shapes=['M-76 52 C-121 18-91-45-47-36 Q-26-29-21-15 L-3-41 C-4-66-34-88-35-117 Q-35-139-24-127 C-6-104 6-80 13-70 Q9-103 22-135 Q33-154 37-136 C39-108 29-77 29-68 Q48-62 59-47 L80-30 Q90-18 72-15 L49-11 38 26 24 55 58 73 Q66 83 48 86 L12 77-8 54-23 57-13 75-32 86-63 84-57 71-34 62-53 55 Z','M-87 24 Q-111 10-119 23 Q-125 39-106 48 L-91 43 Z'];
+  details=['M-77 20 Q-62-3-43 17 Q-30 34-47 50 M43-45 48-43 M12-67 Q-12-101-24-120 M23-74 Q29-107 29-133 M51-21 67-20'];
+ }
+  const bodyPaths=shapes.map(P), detailPaths=details.map(P);
+  const outerGlow=rare?'rgba(255,241,208,.32)':'rgba(153,231,245,.26)';
+  const edgeGlow=rare?'rgba(255,249,233,.96)':'rgba(216,252,255,.94)';
+  const fillTop=rare?'rgba(255,252,245,.78)':'rgba(238,252,255,.72)';
+  const fillMid=rare?'rgba(218,208,255,.26)':'rgba(149,235,245,.24)';
+  const fillLow=rare?'rgba(255,229,180,.18)':'rgba(70,164,183,.16)';
+  const detailBright=rare?'rgba(255,254,246,.95)':'rgba(246,255,255,.92)';
+  const detailSoft=rare?'rgba(244,224,187,.55)':'rgba(180,241,249,.55)';
+  const g=c.createRadialGradient(0,-42,10,0,16,195);
+  g.addColorStop(0,fillTop);
+  g.addColorStop(.42,fillMid);
+  g.addColorStop(1,fillLow);
+  c.save();
+  c.strokeStyle=outerGlow;
+  c.lineWidth=13;
+  c.shadowColor=rare?'#fff1ca':'#88ecff';
+  c.shadowBlur=rare?34:26;
+  c.fillStyle='rgba(0,0,0,0)';
+  for(const path of bodyPaths)c.stroke(path);
+  c.restore();
+  c.save();
+  c.fillStyle=g;
+  c.strokeStyle=edgeGlow;
+  c.lineWidth=1.8;
+  c.shadowColor=rare?'#fff9dc':'#baf4ff';
+  c.shadowBlur=18;
+  for(const path of bodyPaths){c.fill(path);c.stroke(path);}
+  c.restore();
+  c.save();
+  c.globalAlpha=p*(rare ? .85 : .7);
+  c.strokeStyle=detailBright;
+  c.lineWidth=1.25;
+  c.shadowColor=rare?'#fff7db':'#d5faff';
+  c.shadowBlur=10;
+  for(const path of detailPaths)c.stroke(path);
+  c.restore();
+  c.save();
+  c.globalAlpha=p*(rare ? .55 : .42);
+  c.strokeStyle=detailSoft;
+  c.lineWidth=.7;
+  for(const path of detailPaths)c.stroke(path);
+  c.restore();
+  // Inner core glow to push the apparitional, semi-real feel.
+  c.save();
+  c.globalCompositeOperation='screen';
+  const core=c.createRadialGradient(0,-18,5,0,8,142);
+  core.addColorStop(0,rare?'rgba(255,255,250,.9)':'rgba(250,255,255,.82)');
+  core.addColorStop(.45,rare?'rgba(238,219,170,.22)':'rgba(155,235,247,.18)');
+  core.addColorStop(1,'rgba(255,255,255,0)');
+  c.fillStyle=core;
+  c.beginPath();c.ellipse(0,4,128,126,0,0,Math.PI*2);c.fill();
+  c.restore();
+  if(rare){
+   c.save();
+   c.globalAlpha=p*.28;
+   c.lineWidth=.9;
+   c.strokeStyle='rgba(255,241,205,.85)';
+   c.shadowColor='#fff1c2';
+   c.shadowBlur=18;
+   c.beginPath();c.arc(0,-12,186,0,TAU);c.stroke();
+   c.beginPath();c.arc(0,-12,199,-.92,.92);c.stroke();
+   c.restore();
+  }
+  // Drifting particles around the spirit.
+  const rr=rng(411+id.length*31);
+  const count=rare?74:52;
+  for(let j=0;j<count;j++){
+   const a=rr()*TAU+t*(rare ? .08 : .05)*(j%2?1:-1);
+   const rad=(rare?88:76)+rr()*(rare?138:102);
+   const px=Math.cos(a)*rad+Math.sin(t*.8+j)*6;
+   const py=Math.sin(a)*rad*.66-16+Math.cos(t*.65+j*.4)*4;
+   const r=.45+rr()*(rare?1.9:1.5);
+   c.globalAlpha=p*(.08+.30*(.5+.5*Math.sin(t*1.4+j)))*(rare?1.08:1);
+   ell(px,py,r,r,'#dffeff');
+  }
+  // Rare forms get extra warm sparks; regular forms get a soft reflection shimmer.
+  if(rare){
+   for(let j=0;j<18;j++){
+    const lift=j/18,px=(rr()-.5)*120,py=62-lift*160+Math.sin(t*1.4+j)*10;
+    c.globalAlpha=p*(.08+.18*(1-lift));
+    ell(px,py,.8+rr()*1.6,1.2+rr()*2.4,j%2?'#fff4c9':'#ffe5ad');
+   }
+  }
+  c.restore();
+ }
+ function render(t){c.setTransform(ratio,0,0,ratio,0,0);c.clearRect(0,0,W,H);if(scene.startsWith('cave'))cave(t);else if(['lake','reveal','result'].includes(scene))lake(t);else forest(t,scene.startsWith('run_'));}
+ function resize(){W=innerWidth;H=innerHeight;ratio=Math.min(devicePixelRatio||1,1.8);canvas.width=Math.round(W*ratio);canvas.height=Math.round(H*ratio);canvas.style.width=W+'px';canvas.style.height=H+'px';render(still?0:clock);}
+ function tick(ts){if(!document.hidden&&!still&&ts-last>32){last=ts;clock=ts/1000;render(clock);}requestAnimationFrame(tick);}
+ addEventListener('resize',resize);resize();requestAnimationFrame(tick);
+ return {setScene(next,id,reduced){scene=next;animal=id;still=reduced;start=performance.now();render(still?0:clock);},setMotion(reduced){still=reduced;render(still?0:clock);}};
+})();
+</script>
+<script>/* A self-contained prototype. No libraries, network requests, accounts, or storage. */
+'use strict';
+const FFF = (() => {
+ const traits=[
+  "courage",
+  "insight",
+  "loyalty",
+  "ingenuity",
+  "hope",
+  "instinct"
+];
+ const animals={
+  "stag": {
+    "rare": false,
+    "id": "stag",
+    "name": "Stag",
+    "title": "The steadfast light",
+    "traits": [
+      "courage"
+    ],
+    "short": "Courage, resolve, steady leadership",
+    "everyday": "You can be afraid and still take the next step.",
+    "desc": "When the forest closes in, your light holds steady. The stag rises from the lake mist, lowers its antlers toward the shadows, and steps forward. The way out is no longer something you have to find alone.",
+    "meaning": "In this story, courage led your choices: meeting uncertainty with a steady heart. This is about resolve, not being the loudest person in the room.",
+    "article": "a"
+  },
+  "doe": {
+    "rare": false,
+    "id": "doe",
+    "name": "Doe",
+    "title": "The gentle shelter",
+    "traits": [
+      "loyalty",
+      "hope"
+    ],
+    "short": "Compassion, reassurance, quiet strength",
+    "everyday": "You make a frightening place feel a little safer.",
+    "desc": "You kept a place for gentleness, even with the shadows close behind. A doe steps from the silver reeds and touches her nose to the mist. It parts into a sheltered passage, and she waits until you are ready to follow.",
+    "meaning": "In this story, loyalty and hope rose together. You made space for others while keeping faith that something good could still happen. Gentleness is not the same as weakness.",
+    "article": "a"
+  },
+  "fox": {
+    "rare": false,
+    "id": "fox",
+    "name": "Fox",
+    "title": "The impossible wayfinder",
+    "traits": [
+      "ingenuity"
+    ],
+    "short": "Resourcefulness, wit, creative problem-solving",
+    "everyday": "You find another way when the obvious one closes.",
+    "desc": "A closed path was never the same as no path. A fox leaps from the silver mist, its tail scattering sparks over the lake. With one bright glance, it slips between the shadows and shows you a way nobody thought to guard.",
+    "meaning": "In this story, ingenuity led your choices: finding a possibility where the forest offered a problem. Cleverness here means creativity, not dishonesty.",
+    "article": "a"
+  },
+  "wolf": {
+    "rare": false,
+    "id": "wolf",
+    "name": "Wolf",
+    "title": "The faithful guardian",
+    "traits": [
+      "loyalty"
+    ],
+    "short": "Loyalty, trust, looking out for others",
+    "everyday": "You are the person who checks that everyone is coming.",
+    "desc": "You carried more than your own fear through the trees. A wolf forms at the water’s edge and looks back to make sure you are coming. It walks beside you until the forest gives way to morning.",
+    "meaning": "In this story, loyalty led your choices: protecting a connection even when leaving would be easier. This result is about dependability and care, not aggression.",
+    "article": "a"
+  },
+  "owl": {
+    "rare": false,
+    "id": "owl",
+    "name": "Owl",
+    "title": "The quiet watcher",
+    "traits": [
+      "insight"
+    ],
+    "short": "Observation, clarity, thoughtful judgment",
+    "everyday": "You pause long enough to notice what matters.",
+    "desc": "You noticed what the darkness hoped you would miss. An owl unfolds its silver wings above the lake, revealing a path hidden between the reeds. It glides ahead, and every shadow becomes a little easier to understand.",
+    "meaning": "In this story, insight led your choices: looking closely before choosing your next step. This is a style of navigating uncertainty, not a measure of intelligence.",
+    "article": "an"
+  },
+  "raven": {
+    "rare": false,
+    "id": "raven",
+    "name": "Raven",
+    "title": "The hidden-pattern seeker",
+    "traits": [
+      "insight",
+      "ingenuity"
+    ],
+    "short": "Curiosity, pattern-spotting, original thinking",
+    "everyday": "You notice the clue, then ask what else it could mean.",
+    "desc": "You saw more than a locked gate. You saw a question waiting for a different answer. A raven sweeps over the lake, drawing silver constellations between the branches. A hidden pattern becomes a path, and you understand where to go.",
+    "meaning": "In this story, insight and ingenuity rose together. The owl watches closely; the fox invents a new route. The raven combines both, turning a small clue into an unexpected solution.",
+    "article": "a"
+  },
+  "hare": {
+    "rare": false,
+    "id": "hare",
+    "name": "Hare",
+    "title": "The wild-hearted guide",
+    "traits": [
+      "instinct"
+    ],
+    "short": "Alertness, intuition, quick adaptation",
+    "everyday": "You sense when to move and trust your next step.",
+    "desc": "You heard the moment before it arrived. A hare springs from the lake mist, silver ears turning toward a path beyond the trees. It is quick, watchful, and entirely alive. You follow, trusting that you do not have to see the whole way to take the next step.",
+    "meaning": "In this story, instinct led your choices: staying alert and trusting your ability to adapt. Moving away from danger is not cowardice; it can be a very good decision.",
+    "article": "a"
+  },
+  "otter": {
+    "rare": false,
+    "id": "otter",
+    "name": "Otter",
+    "title": "The unbroken spark",
+    "traits": [
+      "hope"
+    ],
+    "short": "Hope, warmth, playfulness under pressure",
+    "everyday": "You keep a little joy alive when things get difficult.",
+    "desc": "Even here, the darkness did not get to keep all the joy. An otter tumbles through the silver water and leaves a luminous trail along the shore. Its light reminds you that escaping can begin with believing there is still something good ahead.",
+    "meaning": "In this story, hope led your choices: protecting warmth, wonder, or joy in a frightening place. Optimism here is a source of resilience, not a lack of seriousness.",
+    "article": "an"
+  },
+  "lynx": {
+    "rare": false,
+    "id": "lynx",
+    "name": "Lynx",
+    "title": "The silent wayfinder",
+    "traits": [
+      "insight",
+      "instinct"
+    ],
+    "short": "Perception, intuition, well-timed action",
+    "everyday": "You watch quietly, then move when the moment is right.",
+    "desc": "You did not need the forest to explain itself out loud. A lynx appears on a stone above the water, its silver ears turning toward something only it can hear. It studies the shadows, then leaps toward the one opening they could not hide.",
+    "meaning": "In this story, insight and instinct rose together. You combined close observation with a readiness to act. The lynx is neither hesitation nor haste, but a well-timed next step.",
+    "article": "a"
+  },
+  "badger": {
+    "rare": false,
+    "id": "badger",
+    "name": "Badger",
+    "title": "The rooted protector",
+    "traits": [
+      "courage",
+      "loyalty"
+    ],
+    "short": "Determination, reliability, protective courage",
+    "everyday": "You hold your ground for the people who count on you.",
+    "desc": "Some light does not blaze or flutter. It simply refuses to go out. A badger emerges from the roots beside the lake and presses its glowing paws into the earth. The shore steadies beneath your feet, and together you take the path home.",
+    "meaning": "In this story, courage and loyalty rose together. You paired resolve with care for others. The badger represents dependable persistence, not stubbornness for its own sake.",
+    "article": "a"
+  },
+  "phoenix": {
+    "rare": true,
+    "id": "phoenix",
+    "name": "Phoenix",
+    "title": "The returning flame",
+    "traits": [
+      "courage",
+      "hope"
+    ],
+    "short": "Resilience, renewal, courage joined with hope",
+    "everyday": "You meet the hard thing and still believe in a new beginning.",
+    "desc": "The mist goes still. Then a single silver ember rises from your wand. A phoenix unfolds above the lake, its long feathers trailing sparks through the dark. Where its wings pass, the shadows loosen. The way forward begins again.",
+    "meaning": "Your bold interruption and your stand against the Wraith met words of courage and hope. In this story, that hidden combination calls a phoenix: a symbol of beginning again, not of being stronger or better than other players.",
+    "article": "a"
+  },
+  "unicorn": {
+    "rare": true,
+    "id": "unicorn",
+    "name": "Unicorn",
+    "title": "The luminous heart",
+    "traits": [
+      "loyalty",
+      "hope"
+    ],
+    "short": "Compassion, integrity, kindness under pressure",
+    "everyday": "You protect your kindness, even when nobody is watching.",
+    "desc": "You made room for kindness when the forest offered every excuse not to. A unicorn steps across the water, its horn gathering the moonlight into a narrow beam. The thorns unlace along the shore. It turns toward you, and the path opens without a fight.",
+    "meaning": "Your kindness to the spider and rescue of the trapped light met words of loyalty and hope. In this story, that hidden combination calls a unicorn. It celebrates this route, not moral superiority or perfection.",
+    "article": "a"
+  }
+};
+ const primaryForms={
+  "courage": "stag",
+  "insight": "owl",
+  "loyalty": "wolf",
+  "ingenuity": "fox",
+  "hope": "otter",
+  "instinct": "hare"
+};
+ const mixedForms=[
+  {
+    "id": "doe",
+    "traits": [
+      "loyalty",
+      "hope"
+    ]
+  },
+  {
+    "id": "raven",
+    "traits": [
+      "insight",
+      "ingenuity"
+    ]
+  },
+  {
+    "id": "lynx",
+    "traits": [
+      "insight",
+      "instinct"
+    ]
+  },
+  {
+    "id": "badger",
+    "traits": [
+      "courage",
+      "loyalty"
+    ]
+  }
+];
+ const rareRules=[
+  {
+    "id": "phoenix",
+    "choices": [
+      "cave_bell",
+      "ward_face"
+    ],
+    "wordTraits": [
+      "courage",
+      "hope"
+    ]
+  },
+  {
+    "id": "unicorn",
+    "choices": [
+      "cave_moonberry",
+      "ward_rescue"
+    ],
+    "wordTraits": [
+      "loyalty",
+      "hope"
+    ]
+  }
+];
+ const words=[
+  [
+    "Courage",
+    "courage"
+  ],
+  [
+    "Wonder",
+    "hope"
+  ],
+  [
+    "Freedom",
+    "instinct"
+  ],
+  [
+    "Mercy",
+    "loyalty"
+  ],
+  [
+    "Curiosity",
+    "ingenuity"
+  ],
+  [
+    "Clarity",
+    "insight"
+  ],
+  [
+    "Resolve",
+    "courage"
+  ],
+  [
+    "Laughter",
+    "hope"
+  ],
+  [
+    "Instinct",
+    "instinct"
+  ],
+  [
+    "Trust",
+    "loyalty"
+  ],
+  [
+    "Wit",
+    "ingenuity"
+  ],
+  [
+    "Truth",
+    "insight"
+  ],
+  [
+    "Strength",
+    "courage"
+  ],
+  [
+    "Hope",
+    "hope"
+  ],
+  [
+    "Motion",
+    "instinct"
+  ],
+  [
+    "Loyalty",
+    "loyalty"
+  ],
+  [
+    "Possibility",
+    "ingenuity"
+  ],
+  [
+    "Wisdom",
+    "insight"
+  ]
+];
+ const encounters={
+  "cave": {
+    "chapter": 0,
+    "kicker": "I · Aragog’s cave",
+    "title": "One more spreadsheet.<br>Or your freedom.",
+    "body": "Behind you, tiny spiders clatter across glowing keyboards. Ahead, a much larger spider blocks the exit and beckons you toward an empty desk.<br><br><strong>“Just a quick requisition.”</strong><br>You need a distraction. Preferably before onboarding.",
+    "options": [
+      {
+        "label": "Enchant the spare keyboard.",
+        "sub": "Let it type a very convincing emergency.",
+        "score": {
+          "ingenuity": 3,
+          "insight": 1
+        },
+        "tag": "The clever decoy",
+        "title": "The keyboard has concerns.",
+        "text": "Keys rattle across the cave. A new message flashes: <strong>URGENT: THE TOTAL IS OFF BY ONE CENT.</strong> Every spider swivels toward the screen. You slip past the empty desk before anyone can assign you a task.",
+        "memory": "You outwitted the spider with an enchanted keyboard.",
+        "next": "fork",
+        "id": "cave_keyboard"
+      },
+      {
+        "label": "Ring the all-staff meeting bell.",
+        "sub": "Commit to the distraction. Loudly.",
+        "score": {
+          "courage": 3,
+          "hope": 1
+        },
+        "tag": "The bold interruption",
+        "title": "Attendance is mandatory.",
+        "text": "You strike the brass bell with your wand. Eight-legged silhouettes scramble toward a distant conference table. You hold your nerve, bow to the bewildered spider, and dash through the opening.",
+        "memory": "You rang the bell and trusted your nerve.",
+        "next": "fork",
+        "id": "cave_bell"
+      },
+      {
+        "label": "Roll a moonberry past its feet.",
+        "sub": "Even a terrifying colleague needs a snack.",
+        "score": {
+          "loyalty": 3,
+          "instinct": 1
+        },
+        "tag": "The small kindness",
+        "title": "A well-earned break.",
+        "text": "The spider pauses. One careful leg nudges the moonberry; another waves a smaller spider over to share. While the two inspect their unexpected treat, you ease through the webbed doorway.",
+        "memory": "You made room for a small kindness before escaping.",
+        "next": "fork",
+        "id": "cave_moonberry"
+      }
+    ]
+  },
+  "fork": {
+    "chapter": 1,
+    "kicker": "II · The three-way path",
+    "title": "Something is following.",
+    "body": "The bass from the cave fades behind you. Then comes a different sound: footsteps, too many to be your own.<br><br>The path divides. A cold shape moves between the trunks. <strong>Which way do you turn?</strong>",
+    "options": [
+      {
+        "label": "Left. Toward the still water.",
+        "sub": "Pause just long enough to listen.",
+        "score": {
+          "insight": 3,
+          "instinct": 1
+        },
+        "tag": "The listening path",
+        "title": "Not every silence is empty.",
+        "text": "You crouch beside a pool. Its surface trembles where the thing behind you steps, revealing which trail it follows. You take the other one, carrying a silver reed that glows softly in your hand.",
+        "memory": "You listened at the still water and read what it revealed.",
+        "next": "ward",
+        "id": "fork_water"
+      },
+      {
+        "label": "Right. Follow the silver flicker.",
+        "sub": "Trust the movement at the edge of your sight.",
+        "score": {
+          "instinct": 3,
+          "courage": 1
+        },
+        "tag": "The untamed path",
+        "title": "A heartbeat ahead.",
+        "text": "A silver flicker darts beneath the roots. You turn without hesitating. The pursuing shadow lunges into the empty path you have just left, and you land safely on a mossy bank.",
+        "memory": "You trusted a silver flicker and changed direction in time.",
+        "next": "ward",
+        "id": "fork_flicker"
+      },
+      {
+        "label": "Straight. Toward the fallen lantern.",
+        "sub": "There may be someone who needs its light.",
+        "score": {
+          "hope": 3,
+          "loyalty": 1
+        },
+        "tag": "The lantern path",
+        "title": "One light becomes two.",
+        "text": "You lift the fallen lantern. A tiny forest sprite peeks from beneath its hood, then kindles a second flame in your palm. The two lights make the following shadow hesitate long enough for you to run.",
+        "memory": "You lifted a fallen lantern and found a little light to share.",
+        "next": "ward",
+        "id": "fork_lantern"
+      }
+    ]
+  },
+  "ward": {
+    "chapter": 2,
+    "kicker": "III · The final deadline",
+    "title": "The gate wants an answer.",
+    "body": "An arch of tangled roots bars the path. Beneath it waits an ink-black Audit Wraith, clutching an impossible stack of missing receipts.<br><br>A riddle glows across the arch. Beside it, a small light struggles in the thorns. <strong>You have one opening.</strong>",
+    "options": [
+      {
+        "label": "Read the riddle on the arch.",
+        "sub": "There has to be a way through its words.",
+        "score": {
+          "insight": 3,
+          "ingenuity": 1
+        },
+        "tag": "The answer in the roots",
+        "title": "A promise opens the way.",
+        "text": "“A promise,” you say. The letters turn to silver. The roots release their grip, and the Wraith dissolves into a remarkably unthreatening shower of blank expense forms.",
+        "memory": "You solved the arch’s riddle: a promise.",
+        "next": "lake",
+        "riddle": true,
+        "id": "ward_riddle"
+      },
+      {
+        "label": "Step forward and face the Wraith.",
+        "sub": "It can be frightening without being in charge.",
+        "score": {
+          "courage": 3,
+          "loyalty": 1
+        },
+        "tag": "The unflinching step",
+        "title": "You are not the deadline.",
+        "text": "You plant your feet. “I am leaving,” you say, more steadily than you feel. The stack of receipts trembles. The Wraith was counting on your retreat; faced with your resolve, it breaks apart into drifting ink.",
+        "memory": "You faced the Wraith and refused to let fear choose for you.",
+        "next": "lake",
+        "id": "ward_face"
+      },
+      {
+        "label": "Free the light caught in the thorns.",
+        "sub": "The smallest thing here should not be left behind.",
+        "score": {
+          "loyalty": 3,
+          "hope": 1
+        },
+        "tag": "The rescued light",
+        "title": "The forest owes you a kindness.",
+        "text": "You turn away from the Wraith and carefully open the thorns. The freed light rises, touches the arch, and unwinds its roots. A passage opens beside you. The Wraith is still looking for the correct form.",
+        "memory": "You freed a trapped light instead of leaving it behind.",
+        "next": "lake",
+        "id": "ward_rescue"
+      }
+    ]
+  }
+};
+ const stage=document.querySelector('#stage'),progress=document.querySelector('#progress'),announcer=document.querySelector('#announcer');
+ const soundButton=document.querySelector('#soundToggle'),motionButton=document.querySelector('#motionToggle');
+ let state={screen:'start',scores:Object.fromEntries(traits.map(t=>[t,0])),history:[],selected:[],result:null};
+ let timer=null,riddleOption=null,sound=false,audio=null,bus=null,droneNodes=[],still=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ function announce(text){announcer.textContent=text;}
+ function setChapter(n){progress.innerHTML=['The cave','The crossroads','The ward','The lake'].map((label,i)=>`<span class="step ${i<n?'done':i===n?'current':''}" ${i===n?'aria-current="step"':''}><i aria-hidden="true"></i>${label}</span>`).join('');progress.style.visibility=n<0?'hidden':'visible';}
+ function paint(html,scene,chapter,caption='The forest remembers.'){
+  clearTimeout(timer); state.screen=scene;document.body.dataset.scene=scene;setChapter(chapter);stage.innerHTML=html;
+  document.querySelector('#visualCaption').textContent=caption;
+  if(window.ForestArt)ForestArt.setScene(scene,state.result?.id||null,still);
+  window.scrollTo({top:0,behavior:'instant'});
+  const heading=stage.querySelector('h1');if(heading){heading.tabIndex=-1;heading.focus({preventScroll:true});}
+ }
+ function reset(){
+  clearTimeout(timer);state={screen:'start',scores:Object.fromEntries(traits.map(t=>[t,0])),history:[],selected:[],result:null};riddleOption=null;
+  paint(`<section class="content wide"><p class="eyebrow">A choice-driven escape</p><h1 class="hero-title">Escape the<br>Forbidden<br><em>Fiscal Forest.</em></h1><p class="hero-note">The spreadsheets were only the beginning.</p><p class="bodycopy">Find your way out of Aragog’s cave, outwit what waits among the trees, and discover the Patronus that will light your way home.</p><button class="primary" data-action="begin">Enter the forest <span class="arrow" aria-hidden="true">↗</span></button><p class="fineprint">Three encounters. Three final words. One light that is yours.<br>12 Patronuses await. Two appear only on hidden paths.<br>A short story, not a test. There is no wrong kind of brave.</p></section>`,'start',-1,'There is a way through.');
+ }
+ function optionButtons(opts){return `<div class="choices">${opts.map((o,i)=>`<button class="choice" data-choice="${i}"><span class="choice-num" aria-hidden="true">0${i+1}</span><span><span class="choice-main">${esc(o.label)}</span><span class="choice-sub">${esc(o.sub)}</span></span><span class="choice-tail" aria-hidden="true">›</span></button>`).join('')}</div>`;}
+ function showEncounter(id){const e=encounters[id];paint(`<section class="content"><p class="eyebrow">${e.kicker}</p><h1 class="scene-title">${e.title}</h1><p class="bodycopy">${e.body}</p>${optionButtons(e.options)}<p class="control-note">Choose a response · click, tap, or press 1 / 2 / 3</p></section>`,id,e.chapter,id==='cave'?'Nobody leaves before reconciliation.':id==='fork'?'Three paths. One decision.':'Fear is not the only way through.');}
+ function addChoice(o){Object.entries(o.score).forEach(([k,v])=>state.scores[k]+=v);state.history.push({id:o.id,tag:o.tag,memory:o.memory,score:{...o.score}});}
+ function choose(index){const e=encounters[state.screen];if(!e||!Number.isInteger(index)||!e.options[index])return;const o=e.options[index];chime(0);
+  if(o.riddle){riddleOption=o;showRiddle();return;}addChoice(o);showOutcome(o,e.chapter);
+ }
+ function showOutcome(o,chapter){paint(`<section class="content"><p class="eyebrow">${esc(o.tag)}</p><h1 class="scene-title">${o.title}</h1><p class="bodycopy">${o.text}</p><p class="memory-line">${chapter===0?'Behind you, the keyboards begin again.':chapter===1?'Far ahead, something glimmers through the trees.':'Beyond the arch, you can hear the water.'}</p><button class="primary" data-run="${o.next}">${o.next==='lake'?'Run toward the lake':'Run for the trees'}<span class="arrow" aria-hidden="true">↗</span></button></section>`,`${chapter===0?'cave':chapter===1?'fork':'ward'}_outcome`,chapter,'Your choice leaves a little light.');}
+ function showRiddle(){paint(`<section class="content"><p class="eyebrow">The root-arch riddle</p><h1 class="scene-title">Words hold a way through.</h1><p class="bodycopy">The Wraith inches closer. The arch whispers:</p><blockquote class="riddle">“I can be made, kept, and broken.<br>But I can never be held.<br>What am I?”</blockquote><div class="choices">${['A promise','A lantern','A path'].map((a,i)=>`<button class="choice" data-answer="${i}"><span class="choice-num" aria-hidden="true">0${i+1}</span><span class="choice-main">${a}</span><span class="choice-tail" aria-hidden="true">›</span></button>`).join('')}</div><p class="feedback" id="riddleFeedback" role="status">Take a breath. There is no time limit.</p><button class="hint" data-action="hint">Ask the arch for a hint</button></section>`,'riddle',2,'The answer does not have to be loud.');}
+ function answer(index){if(state.screen!=='riddle'||!riddleOption)return;if(index===0){const o=riddleOption;riddleOption=null;addChoice(o);chime(1);showOutcome(o,2);}else{document.querySelector('#riddleFeedback').textContent='The roots shift, but do not open. Think of something you give your word to keep.';announce('Not quite. You can try again; there is no penalty.');}}
+ function run(next){const runs={fork:['Branches whip past.','Behind you: eight tiny footsteps and one very persistent meeting invitation.'],ward:['The trees close around you.','Your breath catches. A pale arch appears between the roots.'],lake:['Water. Moonlight. Almost out.','The forest falls silent. Something cold waits at the shore.']};const n=next==='fork'?0:next==='ward'?1:2;const duration=still?800:3600;
+  paint(`<section class="content run-content"><p class="eyebrow">Keep moving</p><h1 class="run-title">${runs[next][0]}</h1><p class="bodycopy">${runs[next][1]}</p><div class="run-bar" style="--run-duration:${duration}ms" aria-hidden="true"><span></span></div><button class="quiet" data-skip="${next}">Continue now →</button></section>`,`run_${next}`,n,'');
+  timer=setTimeout(()=>goNext(next),duration);
+ }
+ function goNext(next){clearTimeout(timer);if(next==='lake')showLake();else if(encounters[next])showEncounter(next);}
+ function showLake(){paint(`<section class="content"><p class="eyebrow">IV · The black lake</p><h1 class="scene-title">The way out needs<br>a little of your light.</h1><p class="bodycopy">The far shore is close. But the mist is thickening, and the path has disappeared.<br><br>You raise your wand. <strong>Choose three words you would carry into the dark.</strong></p><div class="word-grid" role="group" aria-label="Choose exactly three words">${words.map(([w,t],i)=>`<button class="word" data-word="${i}" aria-pressed="false">${w}</button>`).join('')}</div><p class="word-status" id="wordStatus" role="status">0 of 3 words chosen</p><button class="primary" id="cast" data-action="cast" disabled>Call your Patronus <span class="arrow" aria-hidden="true">✧</span></button><p class="fineprint">Your journey matters too. Let these words be the final spark.</p></section>`,'lake',3,'Some light comes from within.');syncWords();}
+ function toggleWord(index){if(state.screen!=='lake'||!words[index])return;const pos=state.selected.indexOf(index);if(pos!==-1)state.selected.splice(pos,1);else if(state.selected.length<3)state.selected.push(index);else{announce('Three words are already selected. Deselect one before choosing another.');return;}chime(.5);syncWords();}
+ function syncWords(){stage.querySelectorAll('[data-word]').forEach(b=>{const picked=state.selected.includes(+b.dataset.word);b.setAttribute('aria-pressed',String(picked));/* Keep alternatives focusable: a fourth click explains the limit. */});const count=state.selected.length;document.querySelector('#wordStatus').textContent=`${count} of 3 words chosen${count===3?' · Your light is ready.':''}`;document.querySelector('#wordStatus').classList.toggle('complete',count===3);document.querySelector('#cast').disabled=count!==3;}
+
+ // Deterministic scoring: the same three decisions and word set always agree.
+ // Rare routes override ordinary scoring. Word click order never changes a result.
+ function calculate(scores,chosen,history=[]){
+  if(!scores||traits.some(t=>!Number.isFinite(scores[t])||scores[t]<0))throw new TypeError('A nonnegative score is required for every trait.');
+  if(!Array.isArray(chosen)||chosen.length!==3||new Set(chosen).size!==3||chosen.some(i=>!Number.isInteger(i)||!words[i]))throw new TypeError('Choose three distinct words.');
+  if(!Array.isArray(history))throw new TypeError('Journey history must be an array.');
+  const combined={...scores},wordPoints=Object.fromEntries(traits.map(t=>[t,0]));
+  chosen.forEach(index=>{const trait=words[index][1];combined[trait]+=2;wordPoints[trait]+=2;});
+  const ranked=traits.slice().sort((a,b)=>combined[b]-combined[a]||wordPoints[b]-wordPoints[a]||traits.indexOf(a)-traits.indexOf(b));
+  const picked=new Set(history.map(h=>typeof h==='string'?h:h.id));
+  const rare=rareRules.find(rule=>rule.choices.every(id=>picked.has(id))&&rule.wordTraits.every(t=>wordPoints[t]>0));
+  if(rare)return {trait:ranked[0],animal:animals[rare.id],kind:'rare',combined,wordPoints,ranked};
+  const [first,second]=ranked;
+  const mixed=combined[second]>=4&&combined[first]-combined[second]<=2
+   ?mixedForms.find(form=>form.traits.includes(first)&&form.traits.includes(second)):null;
+  const id=mixed?mixed.id:primaryForms[first];
+  return {trait:first,animal:animals[id],kind:mixed?'mixed':'core',combined,wordPoints,ranked};
+ }
+ function cast(){
+  if(state.screen!=='lake'||state.selected.length!==3)return;
+  state.result=calculate(state.scores,state.selected,state.history).animal;
+  chime(state.result.rare?3:2);
+  paint(`<section class="content reveal-panel"><p class="eyebrow">${state.result.rare?'An unexpected light answers':'Remember your light'}</p><h1>Expecto Patronum.</h1><p class="bodycopy" style="margin-left:auto;margin-right:auto">${state.selected.map(i=>words[i][0]).join(' · ')}</p><button class="quiet" data-action="reveal">Follow the light →</button></section>`,'reveal',3,'');
+  timer=setTimeout(showResult,still?900:4300);
+ }
+ function showResult(){
+  if(!state.result)return;const a=state.result;
+  const rareBadge=a.rare?'<p class="rare-badge"><span aria-hidden="true">✧</span> Rare Patronus · Hidden path discovered</p>':'';
+  paint(`<section class="content result">${rareBadge}<p class="eyebrow">You found your way · Your Patronus is ${a.article}</p><h1 class="result-title">${a.name}.</h1><p class="result-subtitle">${a.title}</p><p class="bodycopy">${a.desc}</p><div class="word-tags" aria-label="Your chosen words">${state.selected.map(i=>`<span>${words[i][0]}</span>`).join('')}</div><div class="result-controls"><button class="primary" data-action="copy">Copy your result <span class="arrow" aria-hidden="true">↗</span></button><button class="quiet" data-action="restart">Walk the forest again</button></div><p class="flash-message" id="copyFeedback" role="status"></p><details class="result-details"><summary>What in my journey shaped this?</summary><p>${a.meaning}</p><p class="recalled">${state.history.map(h=>esc(h.memory)).join('<br>')}</p><p>Ordinary forms use 12 points from your encounters and 6 from your final words. A closely balanced pair of leading traits can reveal a mixed form. Two hidden routes combine specific actions and word families to reveal rare forms instead. Rare means a less common combination, not a better result.</p><p>Equal trait scores are resolved by points from your words, then a fixed trait order. Selecting the same words in a different order changes nothing. Riddle hints and retries never cost points. These are custom meanings for a playful fan-made story, not an official quiz or a personality assessment.</p></details></section>`,'result',4,a.rare?'A hidden path. The same way home.':'The forest is behind you now.');
+ }
+ async function copyResult(){if(!state.result)return;const text=`I escaped the Forbidden Fiscal Forest. My Patronus is ${state.result.article} ${state.result.name}${state.result.rare?' (rare)':''}: ${state.result.title}.\nMy three words: ${state.selected.map(i=>words[i][0]).join(', ')}.`;let success=false;try{if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(text);success=true;}}catch(e){}if(!success){const ta=document.createElement('textarea');ta.value=text;ta.style.cssText='position:fixed;top:0;left:-9999px';document.body.append(ta);ta.select();try{success=document.execCommand('copy');}catch(e){}ta.remove();}const fb=document.querySelector('#copyFeedback');if(!fb)return;fb.textContent=success?'Copied. A small piece of your magic to keep.':text;}
+ function initAudio(){const AC=window.AudioContext||window.webkitAudioContext;if(!AC)return false;try{if(!audio){audio=new AC();bus=audio.createGain();bus.gain.value=0;bus.connect(audio.destination);[110,164.81,220].forEach((freq,i)=>{const o=audio.createOscillator(),g=audio.createGain();o.type='sine';o.frequency.value=freq;g.gain.value=[.035,.014,.012][i];o.connect(g);g.connect(bus);o.start();droneNodes.push(o);});}if(audio.state==='suspended')audio.resume().catch(()=>{});return true;}catch(e){return false;}}
+ function toggleSound(){if(!sound&&!initAudio()){announce('Sound is not supported by this browser. The game is still fully playable.');return;}sound=!sound;if(bus)bus.gain.setTargetAtTime(sound ? .65 : 0,audio.currentTime,.35);soundButton.textContent=`Sound ${sound?'on':'off'}`;soundButton.setAttribute('aria-pressed',String(sound));soundButton.setAttribute('aria-label',`Turn atmospheric sound ${sound?'off':'on'}`);if(sound)chime(1);}
+ function chime(kind){if(!sound||!audio||!bus)return;const notes=kind===3?[523.25,659.25,783.99,1046.5,1318.51]:kind===2?[523.25,659.25,783.99,1046.5]:kind===1?[523.25,783.99]:[kind===.5?587.33:392];notes.forEach((freq,i)=>{const o=audio.createOscillator(),g=audio.createGain(),t=audio.currentTime+i*.15;o.type='sine';o.frequency.value=freq;g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.09,t+.025);g.gain.exponentialRampToValueAtTime(.001,t+1.8);o.connect(g);g.connect(bus);o.start(t);o.stop(t+2);o.onended=()=>{o.disconnect();g.disconnect();};});}
+ function syncMotion(){document.body.classList.toggle('still',still);motionButton.innerHTML=`<span class="motion-label">Motion </span>${still?'off':'on'}`;motionButton.setAttribute('aria-pressed',String(!still));motionButton.setAttribute('aria-label',`Turn animation ${still?'on':'off'}`);if(window.ForestArt)ForestArt.setMotion(still);}
+ stage.addEventListener('click',event=>{const button=event.target.closest('button');if(!button||button.disabled)return;if(button.dataset.choice!==undefined)return choose(+button.dataset.choice);if(button.dataset.answer!==undefined)return answer(+button.dataset.answer);if(button.dataset.run)return run(button.dataset.run);if(button.dataset.skip)return goNext(button.dataset.skip);if(button.dataset.word!==undefined)return toggleWord(+button.dataset.word);switch(button.dataset.action){case 'begin':chime(0);showEncounter('cave');break;case 'hint':document.querySelector('#riddleFeedback').textContent='A friend can ask you to make one. Keeping it builds trust.';break;case 'cast':cast();break;case 'reveal':showResult();break;case 'copy':copyResult();break;case 'restart':reset();break;}});
+ document.addEventListener('keydown',e=>{if(e.altKey||e.ctrlKey||e.metaKey||e.repeat)return;if(e.key.toLowerCase()==='m'){toggleSound();return;}if(['1','2','3'].includes(e.key)){const i=Number(e.key)-1;if(encounters[state.screen]){e.preventDefault();choose(i);}else if(state.screen==='riddle'){e.preventDefault();answer(i);}}});
+ soundButton.addEventListener('click',toggleSound);motionButton.addEventListener('click',()=>{still=!still;syncMotion();});
+ document.addEventListener('visibilitychange',()=>{if(audio&&bus)bus.gain.setTargetAtTime(sound && !document.hidden ? .65 : 0,audio.currentTime,.2);});
+ syncMotion();reset();
+ /* Inspection helpers for host validation. Ordinary play never needs this interface. */
+ return {version:'2.0',getState:()=>JSON.parse(JSON.stringify(state)),calculate,encounters,words,traits,animals,primaryForms,mixedForms,rareRules};
+})();
+</script>
+</body></html>
